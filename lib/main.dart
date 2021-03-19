@@ -1,11 +1,17 @@
+import 'package:flutter/material.dart';
+
+import 'pages/home_page.dart';
+
 void main() {
-  final Map json = {
-    'nome': 'Edson',
-    'objetos': [
-      {'nome': 'Edson do objeto'},
-      {'nome2': 'Edson do objeto'},
-    ]
-  };
-  print(json);
-  //runApp(MyApp());
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    );
+  }
 }
